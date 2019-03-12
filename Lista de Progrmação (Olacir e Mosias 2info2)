@@ -1,0 +1,155 @@
+EXERCÍCIO 1:
+
+<?php
+    
+    print "O valor por metros:  ";
+    $valor1 = (float) fgets(STDIN);
+
+    $milimetro = $valor1/1000;
+
+    print "Valor em milimetros: $milimetro ";
+    
+    
+EXERCÍCIO 2:
+
+<?php
+
+    print "Digite Quantos dias: ";
+    $dias = (int) fgets (STDIN);
+
+    print "Digite quantas horas: ";
+    $horas = (int) fgets (STDIN);
+
+    print "Digite quantos minutos: ";
+    $minutos = (int) fgets (STDIN);
+
+    print "Digite quantos segundos: ";
+    $segundos = (int) fgets (STDIN);
+
+    $segundos_dias = $dias * 86400;
+    $segundos_horas = $horas * 3600;
+    $segundos_minutos = $minutos * 60;
+    $total_segundos = $segundos_dias + $segundos_horas + $segundos_minutos + $segundos;
+
+    print "O número total de segundos foi: $total_segundos" ;
+    
+    
+EXERCÍCIO 3:
+
+<?php
+
+print "O valor de seu salário atual: ";
+$salario = (float) fgets (STDIN);
+
+print "Digite a porcentagem do aumento: ";
+$porc = (float) fgets (STDIN);
+
+$nova_porc = $porc/100;
+
+$valor_aumento = $salario*$nova_porc;
+$novo_salario = $salario+$valor_aumento;
+
+print "O salário atual reajustado é: $novo_salario";
+
+
+EXERCÍCIO 4
+
+<?php
+
+    print "Preço do produto: ";
+    $preco = (float) fgets (STDIN);
+
+    print "Digite a porcentagem de desconto: ";
+    $desc = (float) fgets (STDIN);
+
+    $nova_desc = $desc/100;
+
+    $valor_real_porcentagem = $preco*$nova_desc;
+    $novo_preco = $preco-$valor_real_porcentagem;
+
+    print "O salário atual reajustado é: $novo_preco";
+
+
+EXERCÍCIO 5:
+
+<?php
+
+    print "Digite a distância a percorrer (km): ";
+    $km = (float) fgets (STDIN);
+
+    print "Digite o quanto você IMAGINA que seja a velocidade média: ";
+    $vm = (float) fgets (STDIN);
+<?php
+
+$a = 11;
+$b = 22;
+
+//troca
+
+$auxiliar = $a;
+$a = $b;
+$b = $auxiliar;
+
+print "variável /$a vale $a e variável /$b vale $b";
+    $tempo = $km/$vm;
+
+    print "o tempo de viagem é de $tempo horas";
+
+EXERCÍCIO 6:
+
+<?php
+
+    print "Temperatura em graus Celsius: ";
+    $celsius = (float) fgets (STDIN);
+
+    $fahrenheit = (float)(9*$celsius)/(5)+32;
+
+    print "Em fahrenheit esta temperatura se torna: $fahrenheit";
+
+
+EXERCÍCIO 7:
+
+<?php
+
+    print "\nQuantos dias o carro ficou alugado?\n";
+    $dias = (int) fgets (STDIN);
+
+    print "Quantos quilômetros foram percorridos com o carro?\n";
+    $km_percorridos = (float) fgets (STDIN);
+    
+    $dia_new = 60 * $dias;<?php
+
+$a = 11;
+$b = 22;
+
+//troca
+
+$auxiliar = $a;
+$a = $b;
+$b = $auxiliar;
+
+print "variável /$a vale $a e variável /$b vale $b";
+    $km_new = 0.15 * $km_percorridos;
+    $resultado = $dia_new + $km_new;
+
+    print "\nO preço final ficou por: R$$resultado\n";
+
+EXERCÍCIO 8:
+<?php
+    
+    print "Quantos cigarros você fuma por dia: ";
+    $cigarros_por_dia = fgets(STDIN);
+
+    print "Há quantos anos você fuma: ";
+    $anos_fumados = fgets(STDIN);
+
+    $cigarros_fumados = $cigarros_por_dia*365*$anos_fumados;
+    $minutos_perdidos = $cigarros_fumados*10;
+    $horas_perdidas = $minutos_perdidos/60;
+    $dias_perdidos = round($horas_perdidas/24);
+
+    print "Você perdeu $dias_perdidos dias de vida!";
+
+
+
+EXERCÍCIO 9:
